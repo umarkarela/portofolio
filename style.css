@@ -1,0 +1,206 @@
+/* === GLOBAL === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #000;
+    font-family: "Konkhmer Sleokchher", sans-serif;
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* === NAVBAR === */
+.navbar {
+    width: 100%;
+    padding: 18px 50px;
+    background: linear-gradient(180deg, #000 40%, #555 100%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    backdrop-filter: blur(4px);
+}
+
+.navbar ul {
+    display: flex;
+    gap: 35px;
+    list-style: none;
+}
+
+.navbar a {
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #13A8D2;
+}
+
+/* === HERO === */
+.hero {
+    padding: 90px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 60px;
+}
+
+.hero-text {
+    max-width: 520px;
+}
+
+.hero-text h3 {
+    color: #13A8D2;
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+.about-text {
+    font-family: "Karma", serif;
+    font-size: 16px;
+    margin-top: 20px;
+    color: #e4e4e4;
+}
+
+.email-btn {
+    margin-top: 30px;
+    background: #13A8D2;
+    color: #fff;
+    padding: 12px 32px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.email-btn:hover {
+    background: #0b87ab;
+}
+
+/* === HERO IMAGE === */
+.hero-image img {
+    width: 400px;
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+    filter: drop-shadow(0 0 20px rgba(19,168,210,0.3));
+    transition: 0.4s ease;
+}
+
+.hero-image img:hover {
+    transform: scale(1.02);
+}
+
+/* === SKILLS === */
+.skill-section {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.skill-section h2 {
+    color: #13A8D2;
+    font-size: 36px;
+}
+
+.skill-grid {
+    margin-top: 45px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 35px;
+    padding: 0 80px;
+}
+
+.skill-grid img {
+    width: 100%;
+    border-radius: 12px;
+    transition: 0.3s ease;
+}
+
+.skill-grid img:hover {
+    transform: translateY(-5px);
+}
+
+/* === PROJECT SECTION === */
+.project-section {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.project-section h2 {
+    color: #13A8D2;
+    font-size: 36px;
+}
+
+.project-box {
+    width: 80%;
+    height: 350px;
+    background: #fff;
+    margin: 35px auto;
+    border-radius: 14px;
+    box-shadow: 0 0 25px rgba(255,255,255,0.15);
+}
+
+/* === CERTIFICATION === */
+.cert-section {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.cert-section h2 {
+    color: #13A8D2;
+    font-size: 36px;
+}
+
+.cert-grid {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 40px;
+    padding: 0 60px;
+}
+
+.cert-card {
+    height: 220px;
+    background: #D9D9D9;
+    border-radius: 12px;
+    box-shadow: 0 0 18px rgba(255,255,255,0.2);
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 780px) {
+    .hero {
+        text-align: center;
+    }
+
+    .hero-text {
+        max-width: 100%;
+    }
+
+    .hero-image img {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .navbar {
+        padding: 15px 25px;
+    }
+
+    .navbar ul {
+        gap: 20px;
+    }
+}
