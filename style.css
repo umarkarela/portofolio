@@ -203,8 +203,9 @@ body {
     .navbar ul {
         gap: 20px;
     }
+}  /* ← DITAMBAH PENUTUP MEDIA QUERY */
 
-    /* === MOBILE RESPONSIVE === */
+/* === MOBILE RESPONSIVE === */
 @media (max-width: 768px) {
 
     /* NAVBAR */
@@ -259,6 +260,7 @@ body {
         padding: 0 20px;
         grid-template-columns: 1fr;
     }
-
 }
+
+
 
